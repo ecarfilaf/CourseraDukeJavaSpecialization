@@ -1,7 +1,7 @@
 
 # Esteban Carfilaf 
 
-Sitio para presentecion y muestra de Apps creads en curso realizado en
+Repository for presentation and display of Apps created in a course carried out in
 
 Coursera by Duke University
 
