@@ -1,0 +1,7 @@
+{
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar",
+		"BabyNames/BabyNames/lib/courserajava.jar",
+		"BabyNames/BabyNames/lib/apache-csv.jar"
+	]
+}
