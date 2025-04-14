@@ -1,7 +1,10 @@
 {
 	"java.project.referencedLibraries": [
-		"lib/**/*.jar",
-		"BabyNames/BabyNames/lib/courserajava.jar",
-		"BabyNames/BabyNames/lib/apache-csv.jar"
+		"d:\\ECarfilaf\\Documentos\\Downloads\\Online Courses\\CourseraDukeJavaSpecialization\\lib\\apache-csv.jar",
+		"d:\\ECarfilaf\\Documentos\\Downloads\\Online Courses\\CourseraDukeJavaSpecialization\\lib\\courserajava.jar"
+	],
+	"java.project.sourcePaths": [
+		"PrinciplesSoftwareDesign\\Module-4\\05_GeneratingRandomText",
+		"PrinciplesSoftwareDesign\\Module-4\\06_InterfaceAbstractClass"
 	]
 }
