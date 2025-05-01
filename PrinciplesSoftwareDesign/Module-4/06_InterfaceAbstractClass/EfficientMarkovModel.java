@@ -63,7 +63,7 @@ public class EfficientMarkovModel extends AbstractMarkovModel {
 				index = map.get(s).size();
 				maxkey = s;
 			}
-			System.out.println(s + "  " + map.get(s));
+			//System.out.println(s + "  " + map.get(s));
 		}
 		System.out.println("max num of keys = " + index);
 		System.out.println("the key is this: " + maxkey);

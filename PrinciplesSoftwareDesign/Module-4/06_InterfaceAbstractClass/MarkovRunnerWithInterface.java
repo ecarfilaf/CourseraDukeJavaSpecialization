@@ -20,7 +20,7 @@ public class MarkovRunnerWithInterface {
 	}
 
 	public void runMarkov() {
-		FileResource fr = new FileResource();
+		FileResource fr = new FileResource("../data/romeo.txt");
 		String st = fr.asString();
 		st = st.replace('\n', ' ');
 		int size = 200;
@@ -35,24 +35,25 @@ public class MarkovRunnerWithInterface {
 		 * MarkovOne mOne = new MarkovOne();
 		 * runModel(mOne, st, size, seed);
 		 */
-		/*
-		 * MarkovFour mFour = new MarkovFour();
-		 * runModel(mFour, st, size, seed);
-		 */
+		
+		 MarkovFour mFour = new MarkovFour();
+		 runModel(mFour, st, size, seed);
+		 
 
-		MarkovModel mThree = new MarkovModel(7);
+		/*MarkovOne mThree = new MarkovOne();
 		runModel(mThree, st, size, seed);
+		*/
 
 	}
 
 	public void testHashMap() {
-		FileResource fr = new FileResource();
+		FileResource fr = new FileResource("../data/confucius.txt");
 		String st = fr.asString();
 		st = st.replace('\n', ' ');
 		// String st = "yes-this-is-a-thin-pretty-pink-thistle";
 		int size = 50;
-		int seed = 531;
-		EfficientMarkovModel mod = new EfficientMarkovModel(5);
+		int seed = 792;
+		EfficientMarkovModel mod = new EfficientMarkovModel(6);
 		runModel(mod, st, size, seed);
 		mod.printHashMapInfo();
 	}
@@ -72,4 +73,9 @@ public class MarkovRunnerWithInterface {
 		System.out.println("\n----------------------------------");
 	}
 
+	public static void main(String[] args) {
+		MarkovRunnerWithInterface runner = new MarkovRunnerWithInterface();
+		runner.testHashMap();
+		//runner.runMarkov();
+	}
 }

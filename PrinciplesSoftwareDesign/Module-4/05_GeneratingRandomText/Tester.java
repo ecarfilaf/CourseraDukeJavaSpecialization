@@ -10,19 +10,25 @@ import edu.duke.*;
 public class Tester {
 	// This method has been made for testing the getFollows method in the MarkovOne
 	// class:
-	public void testGetFollows() {
+	public static void testGetFollows() {
 		MarkovOne one = new MarkovOne();
 		one.setTraining("this is a test yes this is a test.");
 		String key = "t";
 		System.out.println(one.getFollows(key));
 	}
 
-	public void testGetFollowsWithFile() {
+	public static void testGetFollowsWithFile() {
 		MarkovOne one = new MarkovOne();
-		FileResource f = new FileResource();
+		FileResource f = new FileResource("../data/confucius.txt");
 		one.setTraining(f.asString());
-		String key = "o";
+		String key = "he";
 		System.out.println(one.getFollows(key).size());
 		// "You should get 11548." ----> Correct.
+	}
+
+	public static void main(String[] args) {
+		testGetFollows();
+		System.out.println("------------------------------------------------");
+		testGetFollowsWithFile();
 	}
 }
