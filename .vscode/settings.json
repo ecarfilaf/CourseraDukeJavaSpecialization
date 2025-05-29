@@ -1,11 +1,6 @@
 {
 	"java.project.referencedLibraries": [
-		"d:\\ECarfilaf\\Documentos\\Downloads\\Online Courses\\CourseraDukeJavaSpecialization\\lib\\apache-csv.jar",
-		"d:\\ECarfilaf\\Documentos\\Downloads\\Online Courses\\CourseraDukeJavaSpecialization\\lib\\courserajava.jar",
-		"lib/courserajava.jar"
-	],
-	"java.project.sourcePaths": [
-		"PrinciplesSoftwareDesign\\Module-4\\07_WordN-Grams"
+		"lib/**/*.jar"
 	],
 	"java.dependency.syncWithFolderExplorer": false,
 	"java.project.explorer.showNonJavaResources": false
